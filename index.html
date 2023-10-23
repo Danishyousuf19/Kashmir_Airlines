@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashmir Airlines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="lightmode.css" id="stylesheet-link">
+    <link rel="stylesheet" href="buy-ticket.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="startup.css">
+
+</head>
+
+<body>
+
+    <button id="dark"> <img src="dark.png" alt="Comfort" id="dark-png"></button>
+
+    <nav class="navbar">
+        <div class="items">
+            <a></a><img id="logo" src="logo.png" alt="K-A"></a>
+            <ul class="list">
+                <li class="list-items draw-item">
+                    <a href="#" class="drop-down-button">Book Your Flight &#x25BE;</a>
+                    <div id="draw-box">
+                        <ul>
+                            <li class="drop-li">
+                                <button class="gen"
+                                    onclick="buy_domestic()">Domestic</button>
+                            </li>
+
+                            <li class="drop-li">
+                                <button class="gen" id="International" onclick="buy_international()">International</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-items draw-item">
+                    <a href="#" class="drop-down-button">Where We Fly &#x25BE;</a>
+                    <div id="draw-box">
+                        <ul>
+                            <li class="drop-li">
+                                <button class="gen">National</button>
+                            </li>
+                            <li class="drop-li">
+                                <button class="gen">International</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="list-items">
+                    <a href="">Check-In</a>
+                </li>
+                <li class="list-items" onclick="show_login()">
+                    <a style="cursor: pointer;">Login</a>
+                </li>
+                <li class="list-items draw-item">
+                    <a href="#" class="drop-down-button" style="margin-right: 40px;"> Info/Manage&#x25BE;</a>
+                    <div id="draw-box">
+                        <ul>
+                            <li class="drop-li">
+
+                                <button class="gen">Flight Status</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">Edit Booking</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">Change Flight</button>
+                            </li>
+
+                            <li class="drop-li">
+
+                                <button class="gen">Add-ons & Services</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">Fees & Charges</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">Baggage info</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">FAQs</button>
+                            </li>
+                            <li class="drop-li">
+
+                                <button class="gen">Additional Info</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+
+            </ul>
+            <input type="search" placeholder=" Search Flight" id="srch">
+        </div>
+
+    </nav>
+    <!-- 
+        buy domestic
+     -->
+     <div class="cccc">
+    <div class="buy-domestic-container" id="buy_dome">
+        <button onclick="closed()" id="close">❌</button>
+        <script>
+            function closed() {
+                let xi = document.getElementById("buy_dome");
+                    xi.style.display = "none";
+            }
+        </script>
+        <h3>Book Now!</h3>
+        <div class="items">
+            <ul class="list">
+                <li>
+                    <select class="linkSelect" id="selected" onchange="manipulateLink()">
+                        <option value="link1">One Way</option>
+                        <option value="link2">Round Trip</option>
+                        <option value="link3">Multi City</option>
+                    </select>
+                </li>
+                <li>
+                    <select class="linkSelect" id="selected_more" onchange="maxpes()">
+                        <option value="link1">One pax</option>
+                        <option value="link2">Two pax</option>
+                        <option value="link3">More (2+)</option>
+
+                    </select>
+                </li>
+                <li>
+                    <select class="linkSelect">
+                        <option value="link3">Afghan afghani</option>
+                        <option value="link3">Chinese Yuan </option>
+                        <option value="link1">Indian Rupee</option>
+                        <option value="link2">Pakistani Rupee</option>
+                        <option value="link3">Saudi Arabian riyal</option>
+                        <option value="link3">UAE Dirham</option>
+
+                    </select>
+                </li>
+                
+
+            </ul>
+
+
+        </div>
+        
+        <hr>
+        <div class="inputflight">
+            <h4>FROM</h4>
+            <input type="text" name="" id="" placeholder="State Name">
+            <h4>TO</h4>
+            <input type="text" name="" id=""placeholder="State Name">
+            <h4 class="pes">PASSENGERS</h4>
+            <input type="number" class="pes" placeholder="Number Of passengers">
+            <h4>DATE</h4>
+            <input type="date" name="" >
+            <h4 class="return_flight">RETURN DATE</h4>
+            <input type="date" name="" class="return_flight">
+            <button>Search</button>
+        </div>
+    </div>
+    <section id="login-sec">
+        <div id="onstart">
+            <h3>Login/Sign-in</h3>
+            <button onclick="closeDiv()" id="close" >❌</button>
+            <script>
+                function closeDiv() {
+                    let x = document.getElementById("onstart");
+                    if (x.style.display !== "none") {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <hr>
+            <form action="login.php">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="password" name="" id="" placeholder="Password">
+                <button>Login</button>
+            </form>
+            <ul class="login-box-item">
+                <li>
+                    <button>Continue With Google</button>
+                </li>
+                <li>
+                    <button>Continue With Apple-Id</button>
+                </li>
+                <li>
+                    <a href="#" style="text-decoration: underline ;color:#1affcc">Sign-in</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <!-- section 2 -->
+    <section id="home">
+
+        <div class="slideshow-container">
+            <div class="mySlides fade" style=" display: block;"><img src="s3.jpg" class="img">
+
+                <div class="text" id="img3" >Discover the World from a new perspective</div>
+            </div>
+            <div class="mySlides fade" style="display: block;"> <img src="s2.jpg"  class="img">
+                <div class="text" id="img2">We're more than a destination; We're an experience</div>
+            </div>
+            <div class="mySlides fade" style="display: block;"> <img src="s1.jpg" class="img">
+                <div class="text"  id="img1">Fly high, DREAM bigger</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="position: absolute;bottom: 5%;;left: 47%;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+
+        <!-- Script for trnsistion -->
+        <script src="sliding.js">
+        </script>
+
+    </section>
+</body>
+
+</html>
