@@ -30,9 +30,14 @@ inte_visible=true;
  
 
 }
+let isDarkMode = false;
+if (localStorage.getItem('darkMode') === 'true') {
+    toggleMode("darkmode.css");
+    isDarkMode = true;
+}
 window.onload = function () {
 
-    let isDarkMode = false;
+    
     let v = document.getElementById("dark");
     v.addEventListener('click', function () {
         if (isDarkMode) {
@@ -41,6 +46,7 @@ window.onload = function () {
             toggleMode("darkmode.css");
         }
         isDarkMode = !isDarkMode;
+        localStorage.setItem('darkMode', isDarkMode.toString());
     });
 };
 
