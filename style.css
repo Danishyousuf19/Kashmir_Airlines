@@ -35,13 +35,13 @@
 #srch {
   height: 28px;
   width: 10rem;
-  border-radius: 9px;
+  border-radius: 7px;
   outline: none;
-  border: none;
+  border-style: solid;
   padding: 5px;
   font-weight: lighter;
   margin: 14px 0 0 0px;
-  border: 2px solid black;
+  border: 2px solid gray;
 }
 
 /* ITEMS-->DIFFERENT OPTIONS */
@@ -95,7 +95,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 
@@ -105,7 +105,7 @@
   height: 65vh;
   position: absolute;
   object-fit: fill;
-  border-radius: 22px;
+  border-radius: 10px;
 
 }
 
@@ -325,3 +325,4 @@ background-color:#ffffffc5
   color:#66e5ff;
   text-shadow: 2px 2px 2px black;
 }
+
