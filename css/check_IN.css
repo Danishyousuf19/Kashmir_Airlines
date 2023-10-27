@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Libre Caslon Text';
+}
+
+p {
+    text-align: left;
+}
+
+.box3 {
+    background-color: yellow;
+    width: 80vw;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid gray;
+}
+
+li {
+    margin: 12px;
+}
+
+hr {
+    border: 3px solid;
+    border-radius: 4px;
+    border-color: black;
+}
+
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+p {
+    font-size: large;
+    text-shadow: 0 0 2px BLACK;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 7px;
+
+    padding: 2rem;
+    border-radius: 6px;
+    /* background: linear-gradient(45deg, #00ffc8, #f76dff ,#af00ff); */
+    background: #CFD8DC;
+    box-shadow: 0px 0px 5px 3px #b0bec5;
+}
+
+form input {
+    padding: 0.4rem;
+    font-size: 1.3rem;
+    border: solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+#btn {
+    background: #1affcc;
+    padding: 2px;
+    border-radius: 6px;
+    border: solid;
+    cursor: pointer;
+    font-size: large;
+}
+
+#btn:hover {
+    background: #96edd5d1;
+    border: solid #1affcc;
+
+}
+
+#dark2 {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid;
+    position: fixed;
+    bottom: 3rem;
+    right: 2rem;
+    cursor: pointer;
+
+}
+
+#dark-png {
+    width: 2.2rem;
+}
+
+.checkindark {
+    background-color: #37474F;
+    color: white;
+
+}
+
+#home {
+    font-weight: bold;
+    font-style: italic;
+    color: #1affcc;
+    text-shadow: 0 0 3px black;
+}
+
+span {
+    color: #9E9E9E;
+}
