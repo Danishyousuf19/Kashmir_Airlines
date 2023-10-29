@@ -86,7 +86,9 @@
 .list-items>a:hover {
   color: rgb(69, 70, 71);
   text-decoration: underline;
+
 }
+
 
 /* sLIDING WINDOW */
 .slideshow-container {
@@ -369,11 +371,16 @@ background-color:#ffffffc5
     margin: 15px 0;
     border-radius: 3px;
     border: 1px solid;
+    font-weight: normal;
 }
 .card-img:hover{
 /* zoom: 1.04; */
 transform: scaleX(1.04) scaleY(1.04);
 
+}
+.card-body p{
+     margin-bottom: 27px;
+     margin-top: 3px;
 }
 
 #log::after{
@@ -391,3 +398,34 @@ transform: scaleX(1.04) scaleY(1.04);
   transform: scaleX(2);
 }
 
+/* map */
+#map1::after{
+  content: "";
+    width: 35rem;
+    height: 35rem;
+    background: url(../m1.jpg) no-repeat center center/cover;
+    position: absolute;
+ 
+    top: 0.5rem;
+    border-radius: 11px;
+    display: none;
+}
+
+#map1:hover::after {
+  display: inline;
+}
+#map2::after{
+  content: "";
+  width: 35rem;
+  height: 35rem;
+  background: url(../m2.jpg) no-repeat center center/cover;
+  position: absolute;
+  
+  top: 0.5rem;
+  border-radius: 11px;
+  display: none;
+}
+
+#map2:hover::after {
+  display: inline;
+}
