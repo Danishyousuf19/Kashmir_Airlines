@@ -65,3 +65,6 @@ filter: invert(100%);
    .card{
     background-color: #0d1c27;
    }
+   #draw-box{
+    background-color: #ada8a830;
+   }
