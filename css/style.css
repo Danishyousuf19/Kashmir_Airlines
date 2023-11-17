@@ -15,9 +15,10 @@
 /* NAVBAR */
 .navbar {
   background:#f1f1ff;
+  background: transparent linear-gradient(180deg, #f4f5fa 0%, #fbfcfe 100%) 0% 0% no-repeat padding-box;
   position: absolute;
   height: 4rem;
-  box-shadow: 0px 0px 10px ;
+  box-shadow:0px 0px 9px 1px #b0bec5;
   z-index: 3;
   border-radius: 13px;
   top: 3%;
@@ -191,6 +192,7 @@ z-index: 4;
   background-color:#00000030 ;
   display: none;
   margin: auto;
+  padding: .5rem 1.5rem;
 }
 
 .buy-domestic-container .list{
@@ -201,6 +203,7 @@ margin: 12px;
    margin: 1px 5px;
    padding: 3px;
    border-radius: 5px;
+
 }
 option {
    padding: 5px; 
@@ -236,6 +239,7 @@ h3{
   top:17%;
   display: none;
   margin: auto;
+  padding: 1.3rem;
 }
 form{
   display: flex;
@@ -293,14 +297,14 @@ background-color:#ffffffc5
   display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0px;
+    padding: 15px 0px;
 
 }
 .return_flight{
   display: none;
 }
 .inputflight>input {
-  margin: 6px;
+  margin: 12px;
   padding: 5px;
   outline: none;
   border-radius: 5px;
@@ -349,15 +353,33 @@ background-color:#ffffffc5
 .card{
   width: 14rem;
   height: 19rem;
-background-color: #f1f1ff;
+/* background-color: #f1f1ff; */
+background:linear-gradient(180deg, #f4f5fa 0%, #fbfcfe 100%) ;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 2rem;
-  box-shadow: 0px 0px 5px 3px #b0bec5;
+  box-shadow: 0px 0px 5px 1px #b0bec5;
+
 }
+.cards_extra{
+  /* width: 14rem; */
+  /* height: 19rem; */
+/* background-color: #f1f1ff; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 5px 3px #b0bec5; */
+}
+.cards_extra>div{
+  margin: 1.2rem;
+}
+
 .card-img
 {border-radius: 5px;
   width: 13em;
