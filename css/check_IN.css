@@ -51,7 +51,8 @@ form {
     border-radius: 6px;
     /* background: linear-gradient(45deg, #00ffc8, #f76dff ,#af00ff); */
     background: #CFD8DC;
-    box-shadow: 0px 0px 5px 3px #b0bec5;
+    box-shadow: 0px 0px 5px 3px #37474F;
+    /* box-shadow: -10px -10px 20px -0.50px #f9fbfd, 8px 8px 17px #a9bee8; */
 }
 
 form input {
