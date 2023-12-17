@@ -13,7 +13,7 @@
 
 /* NAVBAR */
 .navbar {
- 
+
   background-color: #c8daff;
   position: absolute;
   height: 4rem;
@@ -92,6 +92,12 @@ border: 1px solid #4f6e8a;
 .list-items>a:hover {
   color: rgb(69, 70, 71);
   text-decoration: underline;
+
+}
+
+.list-items>a {
+  font-family: 'Nunito';
+  font-weight: bolder;
 
 }
 
@@ -246,7 +252,8 @@ h3 {
   z-index: 4;
   backdrop-filter: blur(8px);
   border-radius: 14px;
-  box-shadow: 0px 0px 6px 2px;
+  /* box-shadow: 0px 0px 6px 2px; */
+  border: 1px solid #4f6e8a;
   background-color: #00000030;
   top: 17%;
   display: none;
@@ -311,7 +318,8 @@ button:hover {
   background-color: transparent;
   padding: 6px;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 14px;
+  font-family: 'Nunito';
 }
 
 /* input for flight */
@@ -452,13 +460,13 @@ button:hover {
 
 #log::after {
   content: "";
-  width: 6%;
+  width: 5%;
   height: 4%;
   background-color: #1affcc;
   transform: scaleX(0);
   position: absolute;
   top: 92%;
-  left: 10.8%;
+  left: 12.3%;
   transition: .3s;
 }
 
@@ -527,10 +535,29 @@ button:hover {
 .items {
   position: sticky;
 }
-footer {
+.foot {
   position: absolute;
   top: 155vh;
-  padding: 2rem;
- 
+  padding: 1rem;
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ width: 95%;
+ justify-content: space-evenly;
+ background: #b3caff;
+ margin: auto;
+ border-radius: 12px;
+ margin: 1rem 0rem;
+ line-height: 23px;
 
+}
+.foot>div>ul>li>a{
+  font-family: "Nunito";
+  color: #0d566c;
+  font-size: 1.1rem;
+}
+.foot>div>ul>li>a:hover{
+ text-decoration: underline;
+ 
+  color: rgb(1, 32, 42);
 }
