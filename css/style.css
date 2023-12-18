@@ -13,11 +13,11 @@
 
 /* NAVBAR */
 .navbar {
-
+margin-top: 1rem;
+margin-bottom: 2rem;
   background-color: #c8daff;
-  position: absolute;
+  position: relative;
   height: 4rem;
- 
   box-shadow: -10px -10px 20px -0.50px #f9fbfd, 10px 10px 20px #a9bee8;
   z-index: 3;
   border-radius: 13px;
@@ -78,19 +78,17 @@ border: 1px solid #4f6e8a;
   background-color: #00000030;
 }
 
-/* DROPDOWN ITEMS */
 .drop-li {
   margin: 10px 0;
   font-size: initial;
 }
 
-/* HOVER PROPERTIES */
 .draw-item:hover #draw-box {
   display: block;
 }
 
 .list-items>a:hover {
-  color: rgb(69, 70, 71);
+  color: rgb(25, 56, 88);
   text-decoration: underline;
 
 }
@@ -98,13 +96,12 @@ border: 1px solid #4f6e8a;
 .list-items>a {
   font-family: 'Nunito';
   font-weight: bolder;
+  color: #0d566c;
+  color: #006f91;
 
 }
 
-
-/* sLIDING WINDOW */
 .slideshow-container {
-  position: absolute;
   top: 22%;
   bottom: 0;
   left: 0;
@@ -112,12 +109,15 @@ border: 1px solid #4f6e8a;
   width: 85%;
   margin: auto;
 }
-
+#home{
+  position: relative;
+  margin-top: 2rem;
+}
 .img {
   vertical-align: middle;
   width: 100%;
   height: 69vh;
-  position: absolute;
+  /* position: absolute; */
   object-fit: fill;
   border-radius: 10px;
 
@@ -171,7 +171,7 @@ button {
   padding: 8px 12px;
   position: absolute;
   bottom: 45%;
-  width: 100%;
+  width: 84%;
   text-align: center;
   zoom: 2.8;
 }
@@ -194,7 +194,8 @@ button {
 /* buy tickets */
 .buy-domestic-container {
   border: none;
-  position: relative;
+  position: absolute;
+  left: 33%;
   top: 17vh;
   width: fit-content;
   z-index: 3;
@@ -238,7 +239,7 @@ option {
 
 h3 {
   text-align: center;
-  margin: 16px 0px;
+  margin: 2px 0px 12px 0;
   text-shadow: 0 0 2px black;
   font-family: sans-serif;
 }
@@ -327,7 +328,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 0px;
+  padding: 9px 0px;
 
 }
 
@@ -341,6 +342,7 @@ button:hover {
   outline: none;
   border-radius: 5px;
   border: none;
+  width: 70%;
 }
 
 .inputflight button {
@@ -374,10 +376,9 @@ button:hover {
 
 /* PAGE2 */
 #page2 {
-  position: absolute;
-  top: 100vh;
+  /* position: absolute; */
+  /* top: 100vh; */
   padding: 2rem;
-
   width: 100%;
 
 }
@@ -393,8 +394,6 @@ button:hover {
 .card {
   width: 14rem;
   height: 19rem;
-  /* background-color: #f1f1ff; */
-  /* background:linear-gradient(180deg, #f4f5fa 0%, #fbfcfe 100%) ; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -402,18 +401,16 @@ button:hover {
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 2rem;
-  /* box-shadow: 0px 0px 5px 1px #b0bec5; */
   background: linear-gradient(-45deg, #c4d2ef, #dfe6f6);
-  /* box-shadow: -1rem -1rem 2rem -0.5rem #f9fbfd, 1rem 1rem 2rem #a9bee8; */
   box-shadow: -10px -10px 20px -0.50px #f9fbfd, 8px 8px 17px #a9bee8;
 
 }
 
 .cards_extra {
 
-  position: absolute;
+  /* position: absolute; */
   width: 99vw;
-  left: 0;
+  /* left: 0; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -536,8 +533,7 @@ button:hover {
   position: sticky;
 }
 .foot {
-  position: absolute;
-  top: 155vh;
+border: 1px solid #577d89;
   padding: 1rem;
  display: flex;
  flex-direction: row;
@@ -547,14 +543,15 @@ button:hover {
  background: #b3caff;
  margin: auto;
  border-radius: 12px;
- margin: 1rem 0rem;
+ margin: 1rem auto;
  line-height: 23px;
 
 }
 .foot>div>ul>li>a{
   font-family: "Nunito";
   color: #0d566c;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 100;
 }
 .foot>div>ul>li>a:hover{
  text-decoration: underline;

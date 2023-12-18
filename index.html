@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kashmir Airlines</title>
-    <link rel="icon" type="img" href="img/fav.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/lightmode.css" id="stylesheet-link">
+    <link rel="icon" type="img" href="/img/fav.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/lightmode.css" id="stylesheet-link">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
@@ -109,10 +109,6 @@
 
     </nav>
 
-    <!-- 
-        buy domestic
-     -->
-
     <div class="buy-domestic-container" id="buy_dome">
         <button onclick="closed()" id="close">❌</button>
         <script>
@@ -160,15 +156,15 @@
         <hr>
         <div class="inputflight">
             <h4>FROM</h4>
-            <input type="text" placeholder="State Name">
+            <input type="text" placeholder="State Name" id="inpfli1">
             <h4>TO</h4>
-            <input type="text" placeholder="State Name">
+            <input type="text" placeholder="State Name" id="inpfli2">
             <h4 class="pes">PASSENGERS</h4>
-            <input type="number" class="pes" placeholder="Number Of passengers">
+            <input type="number" class="pes" placeholder="Number Of passengers" id="inpfli3">
             <h4>DATE</h4>
-            <input type="date">
+            <input type="date" id="inpfli4">
             <h4 class="return_flight">RETURN DATE</h4>
-            <input type="date" class="return_flight">
+            <input type="date" class="return_flight" id="inpfli5">
             <button>Search</button>
         </div>
     </div>
@@ -187,7 +183,7 @@
             <hr>
             <form action="login.php">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" autocomplete="on">
                 <button>Login</button>
             </form>
             <ul class="login-box-item">
@@ -204,7 +200,6 @@
         </div>
 
     </section>
-    <!-- section 2 -->
 
     <section id="home">
 
@@ -273,131 +268,132 @@
                 </div>
             </div>
         </div>
-
-        <secction class="page3">
-            <h2>EXTRAS</h2>
-            <div class="cards_extra">
-                <div class="card1 card">
-                    <img src="img/ec1.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Delectable preparations now on-
-                            board. Bookings open.</p>
-                        <button class="card-btn">Choose Food</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec2.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Pre-book your favourite Non Alcoholic
-                            Drinks and much more.</p>
-                        <button class="card-btn">For Freshness</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec3.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Unlock The Door To Luxury And Tranquility </p>
-                        <button class="card-btn">Lounge Access</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec9.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Your Seat,Your Journey,Your Way, choose your seat</p>
-                        <button class="card-btn">Select Seat</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec4.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Pre-book any excess check-in
-                            baggage and save up to 20%.</p>
-                        <button class="card-btn">Extra Baggage</button>
-                    </div>
-                </div>
-
-                <div class="card1 card">
-                    <img src="img/ec5.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Get compensated if your baggage is delayed, or lost. </p>
-                        <button class="card-btn">Lost Baggage</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec6.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Pre-book your sports equipment to
-                            enjoy a clean sweep journey.</p>
-                        <button class="card-btn">Sports Equipment</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec7.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Get a blanket, pillow, eyeshade
-                            and dental kit</p>
-                        <button class="card-btn">Blanket,EyeShade</button>
-                    </div>
-                </div>
-                <div class="card1 card">
-                    <img src="img/ec8.jpg" alt="Loading..." class="card-img">
-                    <div class="card-body">
-                        <p class="card-p">Enjoy travel Assistance for a Smooth Journey</p>
-                        <button class="card-btn">Meet and Assist</button>
-                    </div>
-                </div>
-
-
-            </div>
-        </secction>
+    </section>
+    <secction class="page3">
+        <h2 style=" margin-left: 12px;">EXTRAS</h2>
         <hr>
-
-        <footer class="foot">
-
-            <div class="sec">
-                <ul>
-                    <h3 style="text-align: start;"><b>Get To Know Us</B></h3>
-                    <li><a href="">Board of Directors</a></li>
-                    <li><a href="">Awards & Accolades</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
-
-                </ul>
+        <div class="cards_extra">
+            <div class="card1 card">
+                <img src="img/ec1.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Delectable preparations now on-
+                        board. Bookings open.</p>
+                    <button class="card-btn">Choose Food</button>
+                </div>
             </div>
-            <div class="sec">
-                <ul>
-                    <h3 style="text-align: start;"><b>Services</B></h3>
-                    <li><a href="">Fast Pass</a></li>
-                    <li><a href="">Medical Assistance</a></li>
-                    <li><a href="">Group Booking</a></li>
-                    <li><a href="">Charter Booking</a></li>
-                    <li><a href="">Agent login</a></li>
-                    <li><a href="">Refund Claim</a></li>
-                    <li><a href="">Influencer program</a></li>
-                </ul>
+            <div class="card1 card">
+                <img src="img/ec2.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Pre-book your favourite Non Alcoholic
+                        Drinks and much more.</p>
+                    <button class="card-btn">For Freshness</button>
+                </div>
             </div>
-            <div class="sec">
-                <ul>
-                    <h3 style="text-align: start;"><b>Quick Links</B></h3>
-                    <li><a href="">Offers</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Advertise with us</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Terms and Conditions</a></li>
-                    <li><a href="">Disclaimer</a></li>
-                </ul>
+            <div class="card1 card">
+                <img src="img/ec3.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Unlock The Door To Luxury And Tranquility </p>
+                    <button class="card-btn">Lounge Access</button>
+                </div>
             </div>
-            <div class="sec">
-                <ul>
-                    <h3 style="text-align: start;"><b>Social</B></h3>
-                    <li><a href="">FaceBook</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Whatsapp</a></li>
-                    <li><a href="">X</a></li>
-                </ul>
+            <div class="card1 card">
+                <img src="img/ec9.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Your Seat,Your Journey,Your Way, choose your seat</p>
+                    <button class="card-btn">Select Seat</button>
+                </div>
+            </div>
+            <div class="card1 card">
+                <img src="img/ec4.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Pre-book any excess check-in
+                        baggage and save up to 20%.</p>
+                    <button class="card-btn">Extra Baggage</button>
+                </div>
             </div>
 
-        </footer>
+            <div class="card1 card">
+                <img src="img/ec5.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Get compensated if your baggage is delayed, or lost. </p>
+                    <button class="card-btn">Lost Baggage</button>
+                </div>
+            </div>
+            <div class="card1 card">
+                <img src="img/ec6.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Pre-book your sports equipment to
+                        enjoy a clean sweep journey.</p>
+                    <button class="card-btn">Sports Equipment</button>
+                </div>
+            </div>
+            <div class="card1 card">
+                <img src="img/ec7.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Get a blanket, pillow, eyeshade
+                        and dental kit</p>
+                    <button class="card-btn">Blanket,EyeShade</button>
+                </div>
+            </div>
+            <div class="card1 card">
+                <img src="img/ec8.jpg" alt="Loading..." class="card-img">
+                <div class="card-body">
+                    <p class="card-p">Enjoy travel Assistance for a Smooth Journey</p>
+                    <button class="card-btn">Meet and Assist</button>
+                </div>
+            </div>
+
+
+        </div>
+    </secction>
+
+
+    <footer class="foot">
+
+        <div class="sec">
+            <ul>
+                <h3 style="text-align: start;"><b>Get To Know Us</B></h3>
+                <li><a href="">Board of Directors</a></li>
+                <li><a href="">Awards & Accolades</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div class="sec">
+            <ul>
+                <h3 style="text-align: start;"><b>Services</B></h3>
+                <li><a href="">Fast Pass</a></li>
+                <li><a href="">Medical Assistance</a></li>
+                <li><a href="">Group Booking</a></li>
+                <li><a href="">Charter Booking</a></li>
+                <li><a href="">Agent login</a></li>
+                <li><a href="">Refund Claim</a></li>
+                <li><a href="">Influencer program</a></li>
+            </ul>
+        </div>
+        <div class="sec">
+            <ul>
+                <h3 style="text-align: start;"><b>Quick Links</B></h3>
+                <li><a href="">Offers</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Advertise with us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Disclaimer</a></li>
+            </ul>
+        </div>
+        <div class="sec">
+            <ul>
+                <h3 style="text-align: start;"><b>Social</B></h3>
+                <li><a href="">FaceBook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Whatsapp</a></li>
+                <li><a href="">X</a></li>
+            </ul>
+        </div>
+
+    </footer>
 
 </body>
 
