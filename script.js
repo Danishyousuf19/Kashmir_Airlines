@@ -32,7 +32,7 @@ inte_visible=true;
 }
 let isDarkMode = false;
 if (localStorage.getItem('darkMode') === 'true') {
-    toggleMode("/css/darkmode.css");
+    toggleMode("css/darkmode.css");
     isDarkMode = true;
 }
 window.onload = function () {
@@ -41,9 +41,9 @@ window.onload = function () {
     let v = document.getElementById("dark");
     v.addEventListener('click', function () {
         if (isDarkMode) {
-            toggleMode("lightmode.css");
+            toggleMode("css/lightmode.css");
         } else {
-            toggleMode("/css/darkmode.css");
+            toggleMode("css/darkmode.css");
         }
         isDarkMode = !isDarkMode;
         localStorage.setItem('darkMode', isDarkMode.toString());
@@ -104,7 +104,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  setTimeout(showSlides, 4000); 
 }
 
  
