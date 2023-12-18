@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    width:100vw;
+    height: 100vh;
+  }
+ .l{
+    font-size: larger;
+    margin: 5px;
+    font-weight: bolder;
+    font-family: "Nunito";
+   
+ }
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:ghostwhite;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 12px;
+    position: relative;
+    border: 4px solid #5545ff;
+    animation: loader 2s infinite ease;
+  }
+
+  @keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+  }

@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightmode.css" id="stylesheet-link">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/loader_css.css">
 </head>
 
 <body>
-
+    <div class="loader-wrapper">
+        <span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
+       </div>
+      <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+      </script>
     <button id="dark"> <img src="img/dark.png" alt="Comfort" id="dark-png"></button>
 
     <nav class="navbar">
