@@ -476,7 +476,7 @@ button:hover {
   content: "";
   width: 23rem;
   height: 23rem;
-  background: url("/img/m1.jpg") no-repeat center center/cover;
+  background: url("../img/m1.jpg") no-repeat center center/cover;
   position: absolute;
   border-radius: 11px;
   margin: -6px 0 0 25px;
@@ -492,7 +492,7 @@ button:hover {
   content: "";
   width: 23rem;
   height: 23rem;
-  background: url("/img/m2.jpg") no-repeat center center/cover;
+  background: url("../img/m2.jpg") no-repeat center center/cover;
   position: absolute;
   border-radius: 11px;
   margin: -6px 0 0 13px;
