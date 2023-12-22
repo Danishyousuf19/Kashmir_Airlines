@@ -11,14 +11,14 @@
 }
 .inner{
   position: absolute;
-  top: 18%;
+  top: 300px;
   display: flex;
   align-items: center;
   color: black!important;
 }
 @media  only screen and (min-width:500px) {
   .inner{
-    top: 14%;
+    top: 250px;
   }
 }
 .l{
