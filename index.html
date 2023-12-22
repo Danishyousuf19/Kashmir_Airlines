@@ -11,7 +11,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap" rel="stylesheet">
 
-
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+          var bodyHeight = $("body").height();
+           $(".loader-wrapper").css("height",bodyHeight);
+        });
+    </script>
 <script>
     
 </script>
@@ -21,13 +27,7 @@
     <div class="loader-wrapper">
        <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
        </div></div> 
-      <script>
-          $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-            var bodyHeight = $("body").height();
-             $(".loader-wrapper").css("height",bodyHeight);
-          });
-      </script>
+     
    
     <button id="dark"> <img src="img/dark.png" alt="Comfort" id="dark-png"></button>
 
