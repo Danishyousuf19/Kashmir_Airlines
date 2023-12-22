@@ -9,7 +9,56 @@
   font-family: sans-serif;
 
 }
+.inner{
+  position: absolute;
+  top: 13%;
+  display: flex;
+  align-items: center;
+  color: black!important;
+}
+@media  only screen and (min-width:500px) {
+  .inner{
+    top: 10%;
+  }
+}
+.l{
+  font-size: larger;
+  margin: 5px;
+  font-weight: bolder;
+  font-family: "Nunito";
+ 
 
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color:ghostwhite;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  position: relative;
+  border: 4px solid #5545ff;
+  animation: loader 2s infinite ease;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
 
 /* NAVBAR */
 .navbar {
@@ -31,7 +80,7 @@ margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- 
+ align-items: center;
   font-size: large;
   justify-content: center;
 
@@ -44,7 +93,6 @@ margin-bottom: 2rem;
   outline: none;
   border-style: solid;
   padding: 5px;
- 
   font-weight: lighter;
   margin: 14px 0 0 0px;
   border: 2px solid #1affcc;
@@ -173,7 +221,7 @@ button {
 .text {
   padding: 8px 12px;
   position: absolute;
-  bottom: 45%;
+  bottom: 43%;
   width: 84%;
   text-align: center;
   zoom: 2.8;
@@ -557,11 +605,47 @@ border: 1px solid #577d89;
  
   color: rgb(1, 32, 42);
 }
-@media only screen and (max-width:986px) {
+@media only screen and (max-width:802px) {
   #srch{
     display: none;
   }
   .buy-domestic-container {
     left: 26%;
   }
+  .foot>div>ul>li>a{
+    font-size: .8rem;
+  }
+  .list-items>a{
+    font-size: .8rem;
+  }
+.gen{
+  font-size: 12px;
+  padding: 5px;
+
+}
+.list-items {
+  text-align: start;
+  margin: 9px 7px;
+}
+#draw-box{
+  width: 7rem;
+  padding: 2px 5px;
+}
+.text{
+  /* top: 20%; */
+  zoom: 1.7;
+}
+#map1::after{
+  width: 19rem;
+  height: 19rem;
+  
+}
+#map2::after{
+  width: 19rem;
+  height: 19rem;
+
+}
+.cards_extra{
+  width: 98vw;
+}
 }

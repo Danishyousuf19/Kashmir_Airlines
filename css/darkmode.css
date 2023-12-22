@@ -88,3 +88,6 @@ border: 1px solid #2c4c66;
    
    color: #bfdaf2;
   }
+  .inner>span{
+    color: black!important;
+  }

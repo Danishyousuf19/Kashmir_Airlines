@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width:456px)" href="responsive/mobile.400.css">
-<link rel="stylesheet" href="css/loader_css.css">
+
 <script>
     
 </script>
@@ -19,11 +19,13 @@
 
 <body> 
     <div class="loader-wrapper">
-        <span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
-       </div>
+       <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
+       </div></div> 
       <script>
           $(window).on("load",function(){
             $(".loader-wrapper").fadeOut("slow");
+            var bodyHeight = $("body").height();
+             $(".loader-wrapper").css("height",bodyHeight);
           });
       </script>
    
@@ -49,7 +51,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="list-items draw-item">
+                <li class="list-items draw-item" id="wherewefly" >
                     <a href="#" class="drop-down-button">Where We Fly &#x25BE;</a>
                     <div id="draw-box">
                         <ul>
