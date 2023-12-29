@@ -617,6 +617,7 @@ border: 1px solid #577d89;
   #srch{
   height: 21px;
   width: 6.5rem;
+  border-radius: 7px;
   }
   #wherewefly{
     display: none;
@@ -638,6 +639,9 @@ border: 1px solid #577d89;
 .list-items {
   text-align: start;
   margin: 9px 7px;
+}
+.list{
+  grid-gap: 10px;
 }
 #draw-box{
   width: 7rem;
@@ -673,12 +677,20 @@ border: 1px solid #577d89;
   flex-wrap: wrap;
   
 }
+.list{
+  grid-gap: 6px;
+}
 #srch{
-  width: 5.5rem;
+  width: 5rem;
   height: 16px;
   font-size: x-small;
+  border-radius: 4px;
 }
-.list-items>a {
-  font-size: 0.65rem;
+
+.navbar{
+  margin-bottom: .5rem;
+}
+#service{
+  display: none;
 }
 }

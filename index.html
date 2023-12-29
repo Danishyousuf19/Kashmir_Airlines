@@ -46,7 +46,7 @@
                         let wid = document.body.clientWidth; // Use document.body.clientWidth to get the width of the body
                         console.log("wid: " + wid);
                         if (wid < 480) {
-                            document.getElementById("hi").innerHTML = `book &#x25BE;`; // Use textContent to set the text of an element
+                            document.getElementById("hi").innerHTML = `book&#x25BE;`; // Use textContent to set the text of an element
                         }
 
                     </script>
@@ -79,7 +79,7 @@
                     </div>
                 </li>
                 <li class="list-items">
-                    <a href="checkIn.html">Check-In</a>
+                    <a href="checkIn.html">CheckIn</a>
                 </li>
                 <li class="list-items" onclick="show_login()">
                     <a style="cursor: pointer;">Login</a>
@@ -384,9 +384,9 @@
 
             </ul>
         </div>
-        <div class="sec">
+        <div class="sec"id="service">
             <ul>
-                <h3 style="text-align: start;"><b>Services</B></h3>
+                <h3 style="text-align: start;" ><b>Services</B></h3>
                 <li><a href="">Fast Pass</a></li>
                 <li><a href="">Medical Assistance</a></li>
                 <li><a href="">Charter Booking</a></li>
