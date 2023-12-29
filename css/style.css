@@ -693,4 +693,7 @@ border: 1px solid #577d89;
 #service{
   display: none;
 }
+.cards{
+  margin-bottom: 0;
+}
 }
