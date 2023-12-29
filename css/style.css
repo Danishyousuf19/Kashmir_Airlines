@@ -105,6 +105,7 @@ margin-bottom: 2rem;
 .list {
   display: flex;
   grid-gap: 12px;
+  flex-wrap: wrap;
 }
 
 .list-items {
@@ -238,6 +239,7 @@ button {
 
 #dark-png {
   width: 2.2rem;
+  border-radius: 50%;
 }
 
 /* buy tickets */
@@ -599,7 +601,12 @@ border: 1px solid #577d89;
   font-family: "Nunito";
   color: #0d566c;
   font-size: 1rem;
+  list-style: disc;
   font-weight: 100;
+}
+.foot>div>ul>li{
+  list-style: disc;
+
 }
 .foot>div>ul>li>a:hover{
  text-decoration: underline;
@@ -663,5 +670,15 @@ border: 1px solid #577d89;
 .foot{
   width: 97%;
   font-size: x-small;
+  flex-wrap: wrap;
+  
+}
+#srch{
+  width: 5.5rem;
+  height: 16px;
+  font-size: x-small;
+}
+.list-items>a {
+  font-size: 0.65rem;
 }
 }
