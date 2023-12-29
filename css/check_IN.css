@@ -120,6 +120,7 @@ span {
     }
     p{
         font-size: normal;
+        text-shadow: none;
     }
     #btn{
         font-size: small;
@@ -136,6 +137,8 @@ span {
     }
     p{
         font-size: small;
+        text-shadow: none;
+        font-family: 'Nunito', Courier, monospace;
     }
     #btn{
         font-size: small;

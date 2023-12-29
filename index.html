@@ -9,34 +9,47 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightmode.css" id="stylesheet-link">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
+        rel="stylesheet">
 
-    
-<script>
-    
-</script>
+
+    <script>
+
+    </script>
 </head>
 
-<body> 
+<body>
     <div class="loader-wrapper">
-       <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
-       </div></div> 
-       <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-          var bodyHeight = $("html").height();
-           $(".loader-wrapper").css("height",bodyHeight);
+        <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
+        </div>
+    </div>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            var bodyHeight = $("html").height();
+            $(".loader-wrapper").css("height", bodyHeight);
         });
     </script>
-   
+
     <button id="dark"> <img src="img/dark.png" alt="Comfort" id="dark-png"></button>
 
     <nav class="navbar">
-        <div class="items">
-            <a id="log"><img id="logo" src="img/logo.png" alt="K-A"></a>
+        
+            <a id="log" class="items" href="index.html"><img id="logo" src="img/logo.png" height="57" alt="K-A"></a>
+            <div class="items">
             <ul class="list">
                 <li class="list-items draw-item">
-                    <a href="#" class="drop-down-button" id="hi">Book Your Flight &#x25BE;</a>
+                    <a href="#" class="drop-down-button" id="hi">Book Flight&#x25BE;</a>
+                    <script>
+
+                        let wid = document.body.clientWidth; // Use document.body.clientWidth to get the width of the body
+                        console.log("wid: " + wid);
+                        if (wid < 480) {
+                            document.getElementById("hi").innerHTML = `book &#x25BE;`; // Use textContent to set the text of an element
+                        }
+
+                    </script>
                     <div id="draw-box">
                         <ul>
                             <li class="drop-li">
@@ -51,7 +64,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="list-items draw-item" id="wherewefly" >
+                <li class="list-items draw-item" id="wherewefly">
                     <a href="#" class="drop-down-button">Where We Fly &#x25BE;</a>
                     <div id="draw-box">
                         <ul>
@@ -112,11 +125,10 @@
                         </ul>
                     </div>
                 </li>
-
-
+<li class="list-items"> <input type="search" placeholder="Search Flight" id="srch" ></li>
             </ul>
 
-            <input type="search" placeholder="Search Flight" id="srch">
+           
         </div>
 
     </nav>

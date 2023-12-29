@@ -94,20 +94,17 @@ margin-bottom: 2rem;
   border-style: solid;
   padding: 5px;
   font-weight: lighter;
-  margin: 14px 0 0 0px;
+  /* margin: 14px 0 0 0px; */
   border: 2px solid #1affcc;
 }
 
 
 /* ITEMS-->DIFFERENT OPTIONS */
-#logo {
-  height: 57px;
-  margin-right: 15px;
-  margin-top: 3px;
-}
+
 
 .list {
   display: flex;
+  grid-gap: 12px;
 }
 
 .list-items {
@@ -236,6 +233,7 @@ button {
   right: 2rem;
   cursor: pointer;
   z-index: 4;
+  border-radius: 50%;
 }
 
 #dark-png {
@@ -360,6 +358,9 @@ button:hover {
   display: flex;
   justify-content: center;
 
+}
+#log{
+  cursor: pointer;
 }
 
 /* darkmode*/
@@ -607,6 +608,10 @@ border: 1px solid #577d89;
 }
 @media only screen and (max-width:802px) {
   #srch{
+  height: 21px;
+  width: 6.5rem;
+  }
+  #wherewefly{
     display: none;
   }
   .buy-domestic-container {
@@ -647,5 +652,16 @@ border: 1px solid #577d89;
 }
 .cards_extra{
   width: 98vw;
+}
+.foot{
+  font-size: smaller;
+  padding: 0.3rem 0rem;
+}
+}
+@media only screen and (max-width:480px) {
+
+.foot{
+  width: 97%;
+  font-size: x-small;
 }
 }
