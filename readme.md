@@ -29,6 +29,8 @@ The website also has a loading animation that shows up when the page is loading,
 card Section: a section where you can choose different offers and services
 
 Footer Section: Where you can access to more details of this website 
+
+<b> Available in both Light mode dark Mode </b>
 </pre>
 <h1>Technologies</h1>
 The website is built with the following technologies:
