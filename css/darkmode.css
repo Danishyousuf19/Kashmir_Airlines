@@ -90,4 +90,8 @@ border: 1px solid #2c4c66;
   }
   .inner>span{
     color: black!important;
+    text-shadow: 1px 0px 3px #ffffff;
+  }
+  .loader{
+    border-color: #ffffff;
   }
