@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightmode.css" id="stylesheet-link">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
-        rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"rel="stylesheet">
     <script>
-
+        $(window).on("load", function () {
+            var bodyHeight = $("html").height();
+            $(".loader-wrapper").css("height", bodyHeight);
+            $(".loader-wrapper").fadeOut();
+          
+        });
     </script>
 </head>
 
@@ -24,13 +25,7 @@
         <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
         </div>
     </div>
-    <script>
-        $(window).on("load", function () {
-            $(".loader-wrapper").fadeOut("slow");
-            var bodyHeight = $("html").height();
-            $(".loader-wrapper").css("height", bodyHeight);
-        });
-    </script>
+
 
     <button id="dark"> <img src="img/dark.png" alt="Comfort" id="dark-png"></button>
 
@@ -421,7 +416,8 @@
     <div class="copyrght" style="    text-align: center;
 font-size: small;">
 
-        <a href="https://github.com/Danishyousuf19/Kashmir_Airlines" target="_self" style="">copyrght &copy;Danishyousuf2023</a>
+        <a href="https://github.com/Danishyousuf19/Kashmir_Airlines" target="_self"
+            style="font-family: 'Nunito';">copyrght &copy;Danishyousuf2023</a>
     </div>
 </body>
 
