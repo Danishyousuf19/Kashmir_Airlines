@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightmode.css" id="stylesheet-link">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"rel="stylesheet">
-    <script>
-        $(window).on("load", function () {
-            var bodyHeight = $("html").height();
-            $(".loader-wrapper").css("height", bodyHeight);
-            $(".loader-wrapper").fadeOut();
-          
-        });
-    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Metal+Mania&family=Nunito:wght@400&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
     <div class="loader-wrapper">
+        <script> $(window).on("load", function () {
+                var bodyHeight = $("html").height() + "px";
+                $(".loader-wrapper").css({
+                    "height": bodyHeight,
+                });
+                $(".loader-wrapper").fadeOut();
+            });</script>
+
         <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
         </div>
     </div>
@@ -39,7 +43,7 @@
                     <script>
 
                         let wid = document.body.clientWidth; // Use document.body.clientWidth to get the width of the body
-                        console.log("wid: " + wid);
+
                         if (wid < 480) {
                             document.getElementById("hi").innerHTML = `book&#x25BE;`; // Use textContent to set the text of an element
                         }
