@@ -18,18 +18,16 @@
 
 <body>
     <div class="loader-wrapper">
-        <script> $(window).on("load", function () {
-                var bodyHeight = $("html").height() + "px";
-                $(".loader-wrapper").css({
-                    "height": bodyHeight,
-                }).fadeOut();
-               
-            });</script>
+
 
         <div class="inner"><span class="l">L</span> <span class="loader"></span><span class="l">ADING</span>
         </div>
     </div>
+    <script> $(window).on("load", function () {
 
+            $(".loader-wrapper").fadeOut();
+
+        });</script>
 
     <button id="dark"> <img src="img/dark.png" alt="Comfort" id="dark-png"></button>
 
